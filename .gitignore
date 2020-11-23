@@ -1,5 +1,5 @@
 .DS_Store
-node_modules
+node_modulesgit 
 
 
 # local env files
@@ -22,3 +22,4 @@ pnpm-debug.log*
 *.sw?
 
 package-lock.json
+node_modules
