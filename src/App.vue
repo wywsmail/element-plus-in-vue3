@@ -6,7 +6,8 @@
       <el-col :span="4">
         <div id="nav">
           <router-link to="/">inCare</router-link> |
-          <router-link to="/diagnoses">Diagnoses</router-link>
+          <router-link to="/diagnoses">Diagnoses</router-link> |
+          <router-link to="/chart">Chart</router-link>
         </div>
       </el-col>
       <el-col :span="4">
