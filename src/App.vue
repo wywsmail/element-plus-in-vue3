@@ -1,26 +1,34 @@
-<template><el-container>
-  <el-header>
-    <el-row
-    type="flex"
-    justify="space-between">
-      <el-col :span="4">
-        <div id="nav">
-          <router-link to="/">inCare</router-link> |
-          <router-link to="/diagnoses">Diagnoses</router-link> |
-          <router-link to="/chart">Chart</router-link>
-        </div>
-      </el-col>
-      <el-col :span="4">
-        <div id="nav">
-          <router-link to="/login">Login</router-link>
-        </div>
-      </el-col>
-    </el-row>
-  </el-header>
-  <el-main><router-view/></el-main>
-  <el-footer>inCare © 2020</el-footer>
-</el-container>
+<template>
+  <el-container>
+    <el-header>
+      <el-row type="flex" justify="space-between">
+        <el-col :span="5">
+          <div id="nav">
+            <router-link to="/">inCare</router-link> |
+            <router-link to="/diagnoses">Diagnoses</router-link>
+          </div>
+        </el-col>
+        <el-col :span="3">
+          <div id="nav">
+            <router-link to="/login">Login</router-link>
+          </div>
+        </el-col>
+      </el-row>
+    </el-header>
+    <el-main><router-view /></el-main>
+    <el-footer>inCare © 2020</el-footer>
+  </el-container>
 </template>
+
+<script>
+// import HelloWorld from './components/HelloWorld.vue'
+
+export default {
+  name: 'App',
+  components: {
+  }
+}
+</script>
 
 <style>
 #app {
@@ -31,12 +39,13 @@
   color: #2c3e50;
 }
 
-.el-header, .el-footer {
-    background-color: #B3C0D1;
-    color: #333;
-    text-align: center;
-    line-height: 60px;
-  }
+.el-header,
+.el-footer {
+  background-color: #b3c0d1;
+  color: #333;
+  text-align: center;
+  line-height: 60px;
+}
 
 #nav a {
   font-weight: bold;
